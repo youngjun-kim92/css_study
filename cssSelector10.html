@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS(Cascading Style Sheets)</title>
+    <style>
+      /*순서가 중요*/
+      a:link {
+         text-decoration: none;
+         color: greenyellow;
+      }
+      a:visited {
+         text-decoration: none;
+         color: skyblue;
+      }
+      a:hover, a:focus {
+         text-decoration: underline;
+         color: pink;
+      }
+      a:active {
+         color: brown;
+      }
+    </style>
+</head>
+<body>
+  <h2>영화정보</h2>
+  <ul>
+   <li><a href="#">현재상영작</a></li>
+   <li><a href="#">상영예정작</a></li>
+  </ul>
+</body>
+</html>

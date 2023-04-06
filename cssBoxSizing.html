@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS(Cascading Style Sheets)</title>
+    <style> 
+      .box {
+        width: 300px;
+        height: 150px;
+        margin: 10px;
+      }
+      .box1 {
+        box-sizing: content-box;
+        border: 2px solid red;
+        background-color: aquamarine;
+        padding: 30px;
+      }
+      .box2 {
+        box-sizing: border-box;
+        border: 2px solid blue;
+        background-color: yellowgreen;
+        padding: 30px;
+      }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+      <p>content박스로 구성</p>
+    </div>
+    <div class="box box2">
+      <p>border박스로 구성</p>
+    </div>
+</body>
+</html>

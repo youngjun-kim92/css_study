@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS(Cascading Style Sheets)</title>
+    <style> 
+      #box {
+        width: 200px;
+        height: 200px;
+        background-color: skyblue;
+        border: 3px solid red;
+        /*transition-property: width;
+        transition-duration: 2s;
+        transition-timing-function: ease;
+        transition-delay: 1s;
+        transition: width 2s, height 1s, border 3s;*/
+        transition: all 1s;
+      }
+      #box:hover {
+        width: 500px;
+        height: 300px;
+        border: 10px dotted yellow;
+      }
+      #menu li {
+        list-style: none;
+      }
+      #menu li a {
+        display: block;
+        width: 200px;
+        height: 20px;
+        padding: 10px;
+        margin-bottom: 2px;
+        background-color: sandybrown;
+        text-indent: 10px;
+        text-decoration: none;
+        transition: width 1s, color 1s;
+      }
+      #menu li a:hover {
+        width: 300px;
+        color: red;
+      }
+      img {
+        opacity: 0.1;
+      }
+      img:hover {
+        opacity: 1;
+      }
+    </style>
+</head>
+<body>
+    <div id="box">
+
+    </div>
+    <ul id="menu">
+      <li><a href="#">회사소개</a></li>
+      <li><a href="#">제품소개</a></li>
+      <li><a href="#">서비스</a></li>
+      <li><a href="#">커뮤니티</a></li>
+      <li><a href="#">자료실</a></li>
+   </ul>
+   <img src="images/귀신.jpg" alt="">
+</body>
+</html>

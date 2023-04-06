@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS(Cascading Style Sheets)</title>
+    <style> 
+      p {
+        width: 300px;
+        padding: 20px;
+        background-color: seashell;
+        display: inline-block;
+        margin: 20px 10px;
+        border-radius: 55px 10px/10px 55px;
+      }
+      p:nth-of-type(1) {
+        box-shadow: 10px 15px 10px;
+      }
+      p:nth-of-type(2) {
+        box-shadow: 10px 15px 10px rgba(0, 0, 50, 0.4);
+      }
+      p:nth-of-type(3) {
+        box-shadow: 10px 15px 10px 7px rgba(0, 0, 50, 0.4);
+      }
+      p:nth-of-type(4) {
+        box-shadow: 10px 15px 10px inset rgba(0, 0, 50, 0.4);
+      }
+      p:nth-of-type(5) {
+        box-shadow: 10px 15px rgba(0, 0, 50, 0.4);
+      }
+      p:nth-of-type(6) {
+        box-shadow: 5px 5px 5px darkred,
+                    10px 10px 5px yellowgreen,
+                    15px 15px 5px skyblue;
+      }
+    </style>
+</head>
+<body>
+    <h1>세계의 명언들</h1>
+    <p>근심하지 마라. 근심은 인생을 그늘지게 한다.</p>
+    <p>대부분의 사람들은 자신이 마음먹은 크기만큼만 행복하다.</p>
+    <p>인생의 목적이 행복이라고 단정 짓지 말아야 행복할 수 있다.</p>
+    <p>성공은 당신이 원하는 것을 얻는 것이고 행복은 당신이 얻는 것을 원하는 것이다.</p>
+    <p>행복은 목적지가 아니다. 행복은 잘 살고 있는 삶의 부산물이다.</p>
+    <p>행복을 위해 필요한 세 가지는 할 일, 사랑할 사람, 그리고 희망하는 것이다.</p>
+</body>
+</html>

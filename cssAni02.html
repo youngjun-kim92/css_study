@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS(Cascading Style Sheets)</title>
+    <style> 
+      @keyframes bg {
+        0% {
+          background-color: coral;
+        }
+        25% {
+          background-color: royalblue;
+        }
+        75% {
+          background-color: white;
+        }
+        100% {
+          background-color: teal;
+        }
+      }
+      #box {
+        width: 100px;
+        height: 100px;
+        background-color: coral;
+        animation-name: bg;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+      }
+    </style>
+</head>
+<body>
+   <div id="box"></div>
+</body>
+</html>

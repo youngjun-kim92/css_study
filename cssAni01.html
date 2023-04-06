@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS(Cascading Style Sheets)</title>
+    <style> 
+      @keyframes colorChange {
+        from {
+          background-color: skyblue;
+          border: 1px solid palevioletred;
+        }
+        to {
+          background-color: yellowgreen;
+          border: 3px dotted rebeccapurple;
+          border-radius: 50%;
+        }
+      }
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(90deg);
+        }
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: skyblue;
+        margin-bottom: 20px;
+      }
+      #box1 {
+        /*animation-name: colorChange;
+        animation-duration: 3s;
+        animation-iteration-count: 4;
+        animation-direction: alternate;
+        animation-timing-function: ease-in;*/
+        animation: colorChange 1s alternate infinite ease-in;
+      }
+      #box2 {
+        animation-name: rotate;
+        animation-duration: 2s;
+        animation-delay: 2s;
+      }
+      #box1:hover {
+        animation-play-state: paused;
+      }
+    </style>
+</head>
+<body>
+   <div id="box1">
+
+   </div>
+   <div id="box2">
+
+   </div>
+</body>
+</html>

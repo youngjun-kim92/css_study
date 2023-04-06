@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS(Cascading Style Sheets)</title>
+    <style> 
+      .title {
+        width: 500px;
+        border: 1px solid skyblue;
+        text-align: center;
+        border-radius: 10px;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        border: 1px solid;
+        margin: 30px;
+      }
+      .box1 {
+        background: url(images/girl.jpg) no-repeat;
+        border-radius: 50%;
+        background-position: center;
+      }
+      .box2 {
+        height: 100px;
+        background-color: thistle;
+        border-radius: 100px 100px 0 0;
+      }
+      .box3 {
+        height: 200px;
+        border-radius: 10px 80px/80px 10px;
+      }
+      h2 {
+        width: 500px;
+        text-align: center;
+        border: 5px solid royalblue;
+        outline: 5px solid hotpink;
+        outline-offset: 2px;
+      }
+      .imgs {
+        border: 1px solid black;
+        width: 300px;
+        height: 250px;
+        background: url(images/Lighthouse.jpg) no-repeat;
+        background-size: cover;
+        outline: 3px dashed yellowgreen;
+        outline-offset: -7px;
+      }
+    </style>
+</head>
+<body>
+    <h1 class="title">박스의 테두리를 둥글게</h1>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <h2>테두리를 돋보이게</h2>
+    <div class="imgs">
+
+    </div>
+</body>
+</html>

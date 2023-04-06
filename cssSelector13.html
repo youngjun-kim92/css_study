@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS(Cascading Style Sheets)</title>
+    <style>
+      p::first-letter {
+         font-size: 2em;
+         color: rosybrown;
+      }
+      p::first-line {
+         background-color: blanchedalmond;
+      }
+      p::selection {
+         background-color: greenyellow;
+         color: thistle;
+      }
+      h3::before {
+         content: "겨울";
+         color: blueviolet;
+      }     
+      h3::after {
+         content: "-코로나도 함께";
+         color: seagreen;
+      } 
+    </style>
+</head>
+<body>
+   <h2>오늘의 뉴스</h2>
+   <p>시장에서 물량 소화 어려워일 정도 계약 반년 남았는데…"미리 매물 내놓으세요"
+      서울 아파트 전셋값이 신규 입주단지를 중심으로 연일 하락하고 있다. 
+      입주 아파트로 인한 전세물량 폭탄이 전셋값을 끌어내리고 있다.</p>
+   <h3>감기 조심하세요</h3>   
+</body>
+</html>

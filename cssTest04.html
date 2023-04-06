@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS(Cascading Style Sheets)</title>
+    <style>
+      #ckimg {
+         display: none;
+      }
+      #ckimg+label span {
+         display: inline-block;
+         width: 30px;
+         height: 30px;
+         background: url(images/c.svg) no-repeat;
+         vertical-align: middle;
+      }
+      #ckimg:checked+label span {
+         background: url(images/c2.svg) no-repeat;
+      }
+    </style>
+</head>
+<body>
+   <div>
+      <input type="checkbox" id="ckimg">
+      <label for="ckimg">
+         <span></span>쿠쿠밥솥
+      </label>
+   </div>
+</body>
+</html>

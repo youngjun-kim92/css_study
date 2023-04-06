@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS(Cascading Style Sheets)</title>
+    <style> 
+    .trans1 {
+      transition: 2s;
+    }
+    .trans1:hover {
+      transform: translateX(200px);
+    }
+    .trans2 {
+      transition: 2s;
+    }
+    .trans2:hover {
+      transform: translate(100px,200px);
+    }
+    </style>
+</head>
+<body>
+   <img class="trans1" src="images/car_green.jpg" alt=""><br>
+   <img class="trans2" src="images/car_red.jpg" alt="">
+</body>
+</html>

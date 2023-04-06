@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자 관련 스타일</title>
+    <style>
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      h2 {
+        text-decoration: underline;
+      }
+      .target>span {
+        text-decoration: line-through;
+      }
+      .trans1 {
+        text-transform: lowercase;
+      }
+      .trans2 {
+        text-transform: uppercase;
+      }
+      .trans3 {
+        text-transform: capitalize;
+      }
+      .target2 {
+        letter-spacing: -1px;
+      }
+      .target3 {
+        word-spacing: 2em;
+      }
+    </style>
+</head>
+<body>
+  <h2>토마토</h2>
+  <p>토마토는 비타민 A,C가 풍무한 <span>채소</span>이다.</p>
+  <a href="#">직영농장</a>
+  <p class="target">
+    <span>정상가격 : 50,000원</span> ☞ 할인가격 45,000원
+  </p>
+  <ul>
+    <li class="trans1">HTML</li>
+    <li class="trans2">css</li>
+    <li class="trans3">javascript</li>
+    <li class="trans3">have to study</li>
+  </ul>
+  <p class="target1">오늘은 스타일 속성</p>
+  <p class="target2">오늘은 스타일 속성</p>
+  <p class="target3">오늘은 스타일 속성</p>
+</body>
+</html>
